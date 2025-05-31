@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Categorized To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>📋 Categorized To-Do List</h1>
+    
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter task..." />
+      <select id="categorySelect">
+        <option value="work">Work</option>
+        <option value="study">Study</option>
+        <option value="personal">Personal</option>
+      </select>
+      <button id="addTaskBtn">Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="work">Work</button>
+      <button class="filter-btn" data-category="study">Study</button>
+      <button class="filter-btn" data-category="personal">Personal</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
